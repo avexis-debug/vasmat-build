@@ -1,0 +1,35 @@
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #fdfaf5;
+    color: #14532d;
+}
+
+.glass-effect {
+    background: rgba(242, 225, 193, 0.4);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(20, 83, 45, 0.1);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fdfaf5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #14532d;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f2e1c1;
+}
+
+/* Smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
