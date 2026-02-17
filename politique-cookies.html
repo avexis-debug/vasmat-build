@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Cookies | TS Pro-Tech - Aménagement & Finition Liège</title>
+    <meta name="description" content="Politique de cookies du site TS Pro-Tech. Informations sur les cookies utilisés, leur finalité et comment les gérer conformément à la réglementation belge et européenne.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/jpeg" href="public/Favicon_TS.jpg">
+    <link rel="canonical" href="https://ts-pro-tech.vercel.app/politique-cookies.html">
+
+    <!-- Tailwind & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'logo-cream': '#f2e1c1',
+              'logo-green': '#14532d',
+              'logo-dark-green': '#064e3b',
+              'bg-soft': '#fdfaf5',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-bg-soft text-logo-dark-green">
+
+    <!-- ========== NAVBAR ========== -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-logo-cream py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html">
+                        <img src="public/logo-green.png" alt="TS Pro-Tech Logo" class="h-12 w-auto">
+                    </a>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Accueil</a>
+                        <a href="interieur.html" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Travaux Intérieurs</a>
+                        <a href="exterieur.html" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Travaux Extérieurs</a>
+                        <a href="realisations.html" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Réalisations</a>
+                        <a href="contact.html" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-logo-dark-green p-2">
+                        <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden bg-logo-cream shadow-xl absolute top-full left-0 w-full border-b border-logo-dark-green/10">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Accueil</a>
+                <a href="interieur.html" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Travaux Intérieurs</a>
+                <a href="exterieur.html" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Travaux Extérieurs</a>
+                <a href="realisations.html" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Réalisations</a>
+                <a href="contact.html" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ========== HEADER ========== -->
+        <section class="pt-28 pb-12 md:pt-36 md:pb-16 bg-white border-b border-logo-cream/20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl md:text-5xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">Politique de Cookies</h1>
+                <p class="text-logo-dark-green/60 font-medium">Dernière mise à jour : 17 février 2025</p>
+            </div>
+        </section>
+
+        <!-- ========== CONTENT ========== -->
+        <section class="py-12 md:py-20 bg-bg-soft">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="space-y-12">
+
+                    <!-- Introduction -->
+                    <div>
+                        <p class="text-logo-dark-green/80 font-medium leading-relaxed">
+                            La présente politique de cookies vous informe sur l'utilisation des cookies et technologies similaires sur le site web de TS Pro-Tech, conformément à la <strong class="text-logo-dark-green">Directive européenne 2002/58/CE</strong> (Directive ePrivacy), au <strong class="text-logo-dark-green">Règlement Général sur la Protection des Données (RGPD)</strong> et à la <strong class="text-logo-dark-green">Loi belge du 13 juin 2005</strong> relative aux communications électroniques.
+                        </p>
+                    </div>
+
+                    <!-- 1. Qu'est-ce qu'un cookie ? -->
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">1. Qu'est-ce qu'un cookie ?</h2>
+                        <p class="text-logo-dark-green/80 font-medium leading-relaxed">
+                            Un cookie est un petit fichier texte déposé sur votre appareil (ordinateur, tablette, smartphone) lors de la visite d'un site web. Il permet au site de mémoriser certaines informations relatives à votre visite, comme vos préférences de langue ou vos choix en matière de cookies. Les cookies peuvent être « de session » (supprimés à la fermeture du navigateur) ou « persistants » (conservés pour une durée déterminée).
+                        </p>
+                    </div>
+
+                    <!-- 2. Cookies utilisés -->
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">2. Cookies utilisés sur notre site</h2>
+                        <p class="text-logo-dark-green/80 font-medium leading-relaxed mb-6">
+                            Notre site utilise un nombre minimal de cookies. Voici le détail :
+                        </p>
+
+                        <!-- Cookies essentiels -->
+                        <div class="mb-6">
+                            <h3 class="font-bold text-logo-dark-green mb-3 flex items-center gap-2">
+                                <span class="w-3 h-3 bg-logo-green rounded-full"></span>
+                                Cookies strictement nécessaires
+                            </h3>
+                            <div class="bg-white border border-logo-cream/30 rounded-xl overflow-hidden">
+                                <table class="w-full text-sm">
+                                    <thead>
+                                        <tr class="bg-logo-cream/20 border-b border-logo-cream/30">
+                                            <th class="text-left py-3 px-4 font-semibold text-logo-dark-green uppercase tracking-wider text-xs">Nom</th>
+                                            <th class="text-left py-3 px-4 font-semibold text-logo-dark-green uppercase tracking-wider text-xs">Finalité</th>
+                                            <th class="text-left py-3 px-4 font-semibold text-logo-dark-green uppercase tracking-wider text-xs">Durée</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-logo-dark-green/80 font-medium">
+                                        <tr>
+                                            <td class="py-3 px-4 font-semibold text-logo-dark-green">cookies-accepted</td>
+                                            <td class="py-3 px-4">Mémorise votre choix concernant les cookies (acceptation ou refus)</td>
+                                            <td class="py-3 px-4">Persistent (localStorage)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="text-logo-dark-green/60 font-medium text-sm mt-3">
+                                Ces cookies sont indispensables au fonctionnement du site et ne nécessitent pas votre consentement préalable conformément à l'article 129 de la Loi du 13 juin 2005.
+                            </p>
+                        </div>
+
+                        <!-- Cookies tiers -->
+                        <div>
+                            <h3 class="font-bold text-logo-dark-green mb-3 flex items-center gap-2">
+                                <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
+                                Cookies tiers
+                            </h3>
+                            <div class="bg-white border border-logo-cream/30 rounded-xl overflow-hidden">
+                                <table class="w-full text-sm">
+                                    <thead>
+                                        <tr class="bg-logo-cream/20 border-b border-logo-cream/30">
+                                            <th class="text-left py-3 px-4 font-semibold text-logo-dark-green uppercase tracking-wider text-xs">Service</th>
+                                            <th class="text-left py-3 px-4 font-semibold text-logo-dark-green uppercase tracking-wider text-xs">Finalité</th>
+                                            <th class="text-left py-3 px-4 font-semibold text-logo-dark-green uppercase tracking-wider text-xs">Fournisseur</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-logo-dark-green/80 font-medium">
+                                        <tr class="border-b border-logo-cream/10">
+                                            <td class="py-3 px-4 font-semibold text-logo-dark-green">Google Maps</td>
+                                            <td class="py-3 px-4">Affichage de la carte de notre zone d'intervention</td>
+                                            <td class="py-3 px-4">Google LLC</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-3 px-4 font-semibold text-logo-dark-green">Google Fonts</td>
+                                            <td class="py-3 px-4">Chargement de la police de caractères (Inter)</td>
+                                            <td class="py-3 px-4">Google LLC</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="text-logo-dark-green/60 font-medium text-sm mt-3">
+                                Ces services tiers peuvent déposer leurs propres cookies. Nous vous invitons à consulter les politiques de confidentialité respectives de ces fournisseurs pour plus d'informations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Base juridique -->
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">3. Base juridique</h2>
+                        <p class="text-logo-dark-green/80 font-medium leading-relaxed mb-4">
+                            Conformément à l'article 129 de la Loi belge du 13 juin 2005 relative aux communications électroniques et à la Directive ePrivacy :
+                        </p>
+                        <ul class="space-y-3 text-logo-dark-green/80 font-medium">
+                            <li class="flex items-start gap-2"><span class="text-logo-green mt-1">&#10003;</span> Les cookies strictement nécessaires au fonctionnement du site sont déposés sans consentement préalable.</li>
+                            <li class="flex items-start gap-2"><span class="text-logo-green mt-1">&#10003;</span> Tous les autres cookies nécessitent votre consentement préalable, recueilli via notre bannière de cookies.</li>
+                            <li class="flex items-start gap-2"><span class="text-logo-green mt-1">&#10003;</span> Vous pouvez retirer votre consentement à tout moment (voir section 5 ci-dessous).</li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. Bannière de cookies -->
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">4. Votre consentement</h2>
+                        <p class="text-logo-dark-green/80 font-medium leading-relaxed mb-4">
+                            Lors de votre première visite sur notre site, une bannière de cookies vous est présentée. Vous avez le choix :
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-white border border-logo-cream/30 rounded-xl p-5">
+                                <h3 class="font-semibold text-logo-green mb-2 text-sm">Accepter</h3>
+                                <p class="text-logo-dark-green/70 font-medium text-sm">Vous autorisez le dépôt de tous les cookies sur votre appareil.</p>
+                            </div>
+                            <div class="bg-white border border-logo-cream/30 rounded-xl p-5">
+                                <h3 class="font-semibold text-logo-green mb-2 text-sm">Refuser</h3>
+                                <p class="text-logo-dark-green/70 font-medium text-sm">Seuls les cookies strictement nécessaires seront utilisés. Les services tiers peuvent être limités.</p>
+                            </div>
+                        </div>
+                        <p class="text-logo-dark-green/80 font-medium leading-relaxed mt-4">
+                            Votre choix est mémorisé afin de ne pas vous solliciter à chaque visite.
+                        </p>
+                    </div>
+
+                    <!-- 5. Gérer vos cookies -->
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">5. Comment gérer ou supprimer vos cookies</h2>
+                        <p class="text-logo-dark-green/80 font-medium leading-relaxed mb-4">
+                            Vous pouvez à tout moment modifier vos préférences en matière de cookies :
+                        </p>
+
+                        <div class="bg-white border border-logo-cream/30 rounded-xl p-6 md:p-8 mb-6">
+                            <h3 class="font-semibold text-logo-dark-green mb-3">Réinitialiser votre choix sur notre site</h3>
+                            <p class="text-logo-dark-green/70 font-medium text-sm mb-4">Cliquez sur le bouton ci-dessous pour supprimer votre préférence et réafficher la bannière de cookies.</p>
+                            <button onclick="localStorage.removeItem('cookies-accepted'); location.reload();" class="px-6 py-3 bg-logo-green text-white text-xs font-semibold uppercase tracking-wider rounded-lg hover:bg-logo-dark-green transition-colors">
+                                Réinitialiser mes préférences cookies
+                            </button>
+                        </div>
+
+                        <div class="bg-white border border-logo-cream/30 rounded-xl p-6 md:p-8">
+                            <h3 class="font-semibold text-logo-dark-green mb-3">Via les paramètres de votre navigateur</h3>
+                            <p class="text-logo-dark-green/70 font-medium text-sm mb-4">Vous pouvez également configurer votre navigateur pour bloquer ou supprimer les cookies :</p>
+                            <ul class="space-y-2 text-logo-dark-green/80 font-medium text-sm">
+                                <li class="flex items-start gap-2"><span class="text-logo-green mt-1">&#10003;</span> <strong>Google Chrome :</strong> Paramètres &gt; Confidentialité et sécurité &gt; Cookies</li>
+                                <li class="flex items-start gap-2"><span class="text-logo-green mt-1">&#10003;</span> <strong>Firefox :</strong> Paramètres &gt; Vie privée et sécurité &gt; Cookies et données de sites</li>
+                                <li class="flex items-start gap-2"><span class="text-logo-green mt-1">&#10003;</span> <strong>Safari :</strong> Préférences &gt; Confidentialité &gt; Gérer les données de sites web</li>
+                                <li class="flex items-start gap-2"><span class="text-logo-green mt-1">&#10003;</span> <strong>Microsoft Edge :</strong> Paramètres &gt; Cookies et autorisations de sites</li>
+                            </ul>
+                            <p class="text-logo-dark-green/60 font-medium text-sm mt-4">
+                                Note : la suppression ou le blocage de certains cookies peut affecter le fonctionnement du site.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 6. Vos droits -->
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">6. Vos droits</h2>
+                        <p class="text-logo-dark-green/80 font-medium leading-relaxed mb-4">
+                            Conformément au RGPD, vous disposez de droits sur vos données personnelles collectées via les cookies (accès, rectification, effacement, opposition, etc.). Pour plus d'informations, consultez notre
+                            <a href="politique-confidentialite.html" class="text-logo-green hover:underline font-semibold">Politique de Confidentialité</a>.
+                        </p>
+                    </div>
+
+                    <!-- 7. Contact -->
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">7. Contact</h2>
+                        <p class="text-logo-dark-green/80 font-medium leading-relaxed mb-4">
+                            Pour toute question relative à notre utilisation des cookies, vous pouvez nous contacter :
+                        </p>
+                        <div class="bg-white border border-logo-cream/30 rounded-xl p-6 md:p-8 space-y-3">
+                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Email :</strong> <a href="mailto:service.tsprotech@gmail.com" class="text-logo-green hover:underline">service.tsprotech@gmail.com</a></p>
+                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Téléphone :</strong> <a href="tel:+32460961885" class="text-logo-green hover:underline">+32 460 96 18 85</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 8. Modifications -->
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">8. Modifications</h2>
+                        <p class="text-logo-dark-green/80 font-medium leading-relaxed">
+                            TS Pro-Tech se réserve le droit de modifier la présente politique de cookies à tout moment. Toute modification sera publiée sur cette page avec une date de mise à jour révisée.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-logo-cream/30 text-logo-dark-green pt-12 pb-8 md:pt-20 md:pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10 md:gap-12 md:mb-16">
+                <div class="flex flex-col">
+                    <img src="public/logo-green.png" alt="TS Pro-Tech" class="h-16 w-auto mb-6">
+                    <p class="text-logo-dark-green/60 text-sm font-medium leading-relaxed">
+                        Votre partenaire aménagement & finition à Liège. Un rendu propre, net et professionnel.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-logo-dark-green">Navigation</h4>
+                    <ul class="space-y-3 text-logo-dark-green/70 font-medium text-sm">
+                        <li><a href="index.html" class="hover:text-logo-green transition-colors">Accueil</a></li>
+                        <li><a href="interieur.html" class="hover:text-logo-green transition-colors">Travaux Intérieurs</a></li>
+                        <li><a href="exterieur.html" class="hover:text-logo-green transition-colors">Travaux Extérieurs</a></li>
+                        <li><a href="realisations.html" class="hover:text-logo-green transition-colors">Réalisations</a></li>
+                        <li><a href="contact.html" class="hover:text-logo-green transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-logo-dark-green">Contact</h4>
+                    <ul class="space-y-3 text-logo-dark-green/70 font-medium text-sm">
+                        <li><a href="tel:+32460961885" class="hover:text-logo-green transition-colors">+32 460 96 18 85</a></li>
+                        <li><a href="mailto:service.tsprotech@gmail.com" class="hover:text-logo-green transition-colors">service.tsprotech@gmail.com</a></li>
+                        <li>Liège et alentour</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-logo-dark-green">Zone d'intervention</h4>
+                    <ul class="space-y-2 text-logo-dark-green/70 font-medium text-sm">
+                        <li>Liège</li>
+                        <li>Seraing</li>
+                        <li>Verviers</li>
+                        <li>Herstal</li>
+                        <li>Ans</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-6 md:pt-10 border-t border-logo-dark-green/10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div id="footer-year" class="text-logo-dark-green/30 text-[10px] uppercase font-semibold tracking-[0.2em] text-center md:text-left"></div>
+                <div class="flex gap-8 text-[10px] uppercase font-semibold tracking-[0.15em] text-logo-dark-green/30">
+                    <a href="mentions-legales.html" class="hover:text-logo-dark-green transition-colors">Mentions Légales</a>
+                    <a href="politique-confidentialite.html" class="hover:text-logo-dark-green transition-colors">Confidentialité</a>
+                    <a href="politique-cookies.html" class="hover:text-logo-dark-green transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="hidden fixed bottom-4 left-4 z-50 max-w-sm bg-white border border-logo-cream rounded-2xl shadow-xl p-6">
+        <p class="text-sm text-logo-dark-green font-medium mb-4 leading-relaxed">Ce site utilise des cookies pour améliorer votre expérience de navigation. <a href="politique-cookies.html" class="text-logo-green hover:underline">En savoir plus</a>.</p>
+        <div class="flex gap-3">
+            <button id="cookie-accept" class="px-5 py-2 bg-logo-green text-white text-xs font-semibold uppercase tracking-wider rounded-lg hover:bg-logo-dark-green transition-colors">Accepter</button>
+            <button id="cookie-refuse" class="px-5 py-2 bg-logo-cream text-logo-dark-green text-xs font-semibold uppercase tracking-wider rounded-lg hover:bg-logo-cream/70 transition-colors">Refuser</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
