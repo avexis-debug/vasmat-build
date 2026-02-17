@@ -142,19 +142,19 @@
         <section class="py-8 md:py-12 bg-white border-y border-logo-cream/20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-wrap justify-center gap-2 md:gap-4">
-                    <button data-filter="all" class="filter-btn active px-4 py-2.5 md:px-8 md:py-3 bg-logo-dark-green text-white font-semibold uppercase tracking-widest text-xs rounded transition-all hover:bg-black">
+                    <button data-filter="all" class="filter-btn active px-4 py-2.5 md:px-8 md:py-3 font-semibold uppercase tracking-widest text-xs rounded transition-all">
                         Tous
                     </button>
-                    <button data-filter="interieur" class="filter-btn px-4 py-2.5 md:px-8 md:py-3 bg-white border-2 border-logo-green/20 text-logo-green font-semibold uppercase tracking-widest text-xs rounded hover:border-logo-green hover:bg-logo-cream/10 transition-all">
+                    <button data-filter="interieur" class="filter-btn px-4 py-2.5 md:px-8 md:py-3 font-semibold uppercase tracking-widest text-xs rounded transition-all">
                         Intérieur
                     </button>
-                    <button data-filter="electricite" class="filter-btn px-4 py-2.5 md:px-8 md:py-3 bg-white border-2 border-logo-green/20 text-logo-green font-semibold uppercase tracking-widest text-xs rounded hover:border-logo-green hover:bg-logo-cream/10 transition-all">
+                    <button data-filter="electricite" class="filter-btn px-4 py-2.5 md:px-8 md:py-3 font-semibold uppercase tracking-widest text-xs rounded transition-all">
                         Électricité
                     </button>
-                    <button data-filter="securite" class="filter-btn px-4 py-2.5 md:px-8 md:py-3 bg-white border-2 border-logo-green/20 text-logo-green font-semibold uppercase tracking-widest text-xs rounded hover:border-logo-green hover:bg-logo-cream/10 transition-all">
+                    <button data-filter="securite" class="filter-btn px-4 py-2.5 md:px-8 md:py-3 font-semibold uppercase tracking-widest text-xs rounded transition-all">
                         Sécurité
                     </button>
-                    <button data-filter="exterieur" class="filter-btn px-4 py-2.5 md:px-8 md:py-3 bg-white border-2 border-logo-green/20 text-logo-green font-semibold uppercase tracking-widest text-xs rounded hover:border-logo-green hover:bg-logo-cream/10 transition-all">
+                    <button data-filter="exterieur" class="filter-btn px-4 py-2.5 md:px-8 md:py-3 font-semibold uppercase tracking-widest text-xs rounded transition-all">
                         Extérieur
                     </button>
                 </div>
@@ -389,6 +389,11 @@
         </div>
     </div>
 
+    <style>
+        .filter-btn { background: #fff; border: 2px solid rgba(20,83,45,0.2); color: #14532d; }
+        .filter-btn.active { background: #064e3b; border-color: #064e3b; color: #fff; }
+    </style>
+
     <script src="script.js"></script>
 
     <!-- Portfolio Filter Script -->
@@ -401,13 +406,9 @@
             btn.addEventListener('click', function () {
                 const filter = this.getAttribute('data-filter');
 
-                // Update active button styles
-                filterButtons.forEach(function (b) {
-                    b.classList.remove('bg-logo-dark-green', 'text-white', 'active');
-                    b.classList.add('bg-white', 'border-2', 'border-logo-green/20', 'text-logo-green');
-                });
-                this.classList.add('bg-logo-dark-green', 'text-white', 'active');
-                this.classList.remove('bg-white', 'border-2', 'border-logo-green/20', 'text-logo-green');
+                // Update active button
+                filterButtons.forEach(function (b) { b.classList.remove('active'); });
+                this.classList.add('active');
 
                 // Filter items
                 portfolioItems.forEach(function (item) {
