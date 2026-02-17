@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 navbar.classList.remove('py-3', 'border-white/20');
                 if (isHomepage) {
                     navbar.classList.remove('bg-white/10', 'backdrop-blur-md');
-                    if (navLogo) navLogo.src = 'public/logo-ts-pro-tech.jpeg';
+                    if (navLogo) navLogo.src = 'public/logo-ts-pro-tech.png';
                     if (navToggle) { navToggle.classList.remove('text-white'); navToggle.classList.add('text-logo-dark-green'); }
                     navLinks.forEach(function (l) {
                         l.classList.remove('text-white', 'text-white/70', 'hover:text-white', 'hover:text-logo-cream');
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 navbar.classList.add('py-3', 'border-white/20');
                 if (isHomepage) {
                     navbar.classList.add('bg-white/10', 'backdrop-blur-md');
-                    if (navLogo) navLogo.src = 'public/logo-ts-pro-tech.jpeg';
+                    if (navLogo) navLogo.src = 'public/logo-ts-pro-tech.png';
                     if (navToggle) { navToggle.classList.remove('text-logo-dark-green'); navToggle.classList.add('text-white'); }
                     navLinks.forEach(function (l) {
                         l.classList.remove('text-logo-dark-green/60', 'hover:text-logo-dark-green');
