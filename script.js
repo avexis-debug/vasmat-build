@@ -13,14 +13,30 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Navbar scroll effect
+    var navLogo = document.getElementById('nav-logo');
+    var navLinks = document.querySelectorAll('.nav-link');
+    var navToggle = document.querySelector('.nav-toggle');
+
     if (navbar) {
         window.addEventListener('scroll', function () {
             if (window.scrollY > 50) {
-                navbar.classList.add('shadow-lg', 'py-2');
-                navbar.classList.remove('py-3');
+                navbar.classList.add('shadow-lg', 'py-2', 'bg-white', 'border-b', 'border-logo-cream/50');
+                navbar.classList.remove('py-3', 'bg-white/10', 'backdrop-blur-md');
+                if (navLogo) navLogo.src = 'public/logo-green.png';
+                if (navToggle) { navToggle.classList.remove('text-white'); navToggle.classList.add('text-logo-dark-green'); }
+                navLinks.forEach(function (l) {
+                    l.classList.remove('text-white', 'text-white/70', 'hover:text-white', 'hover:text-logo-cream');
+                    l.classList.add('text-logo-dark-green/60', 'hover:text-logo-dark-green');
+                });
             } else {
-                navbar.classList.remove('shadow-lg', 'py-2');
-                navbar.classList.add('py-3');
+                navbar.classList.remove('shadow-lg', 'py-2', 'bg-white', 'border-b', 'border-logo-cream/50');
+                navbar.classList.add('py-3', 'bg-white/10', 'backdrop-blur-md');
+                if (navLogo) navLogo.src = 'public/logo-white.png';
+                if (navToggle) { navToggle.classList.remove('text-logo-dark-green'); navToggle.classList.add('text-white'); }
+                navLinks.forEach(function (l) {
+                    l.classList.remove('text-logo-dark-green/60', 'hover:text-logo-dark-green');
+                    l.classList.add('text-white/70', 'hover:text-white');
+                });
             }
         });
     }

@@ -77,27 +77,27 @@
 <body class="bg-bg-soft text-logo-dark-green">
 
     <!-- ========== NAVBAR ========== -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-logo-cream py-3">
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 bg-white/10 backdrop-blur-md py-3">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/">
-                        <img src="public/logo-green.png" alt="TS Pro-Tech Logo" class="h-12 w-auto">
+                        <img id="nav-logo" src="public/logo-white.png" alt="TS Pro-Tech Logo" class="h-12 w-auto transition-all duration-500">
                     </a>
                 </div>
 
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="/" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green hover:text-logo-dark-green transition-colors duration-200">Accueil</a>
-                        <a href="/travaux-interieurs-liege" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Travaux Intérieurs</a>
-                        <a href="/travaux-exterieurs-liege" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Travaux Extérieurs</a>
-                        <a href="/realisations-travaux-liege" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Réalisations</a>
-                        <a href="/devis-gratuit-liege" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Contact</a>
+                        <a href="/" class="nav-link text-[13px] font-medium tracking-wide text-white hover:text-logo-cream transition-colors duration-200">Accueil</a>
+                        <a href="/travaux-interieurs-liege" class="nav-link text-[13px] font-medium tracking-wide text-white/70 hover:text-white transition-colors duration-200">Travaux Intérieurs</a>
+                        <a href="/travaux-exterieurs-liege" class="nav-link text-[13px] font-medium tracking-wide text-white/70 hover:text-white transition-colors duration-200">Travaux Extérieurs</a>
+                        <a href="/realisations-travaux-liege" class="nav-link text-[13px] font-medium tracking-wide text-white/70 hover:text-white transition-colors duration-200">Réalisations</a>
+                        <a href="/devis-gratuit-liege" class="nav-link text-[13px] font-medium tracking-wide text-white/70 hover:text-white transition-colors duration-200">Contact</a>
                     </div>
                 </div>
 
                 <div class="md:hidden">
-                    <button id="menu-toggle" class="text-logo-dark-green p-2">
+                    <button id="menu-toggle" class="nav-toggle text-white p-2 transition-colors duration-500">
                         <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -109,7 +109,7 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="md:hidden hidden bg-logo-cream shadow-xl absolute top-full left-0 w-full border-b border-logo-dark-green/10">
+        <div id="mobile-menu" class="md:hidden hidden bg-white/95 backdrop-blur-lg shadow-xl absolute top-full left-0 w-full border-b border-logo-dark-green/10">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="/" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Accueil</a>
                 <a href="/travaux-interieurs-liege" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Travaux Intérieurs</a>
@@ -145,8 +145,8 @@
                         <a href="/devis-gratuit-liege" class="px-8 py-4 bg-logo-green text-white font-semibold uppercase tracking-widest text-sm rounded-md transition-all hover:bg-logo-dark-green text-center shadow-lg">
                             Devis Gratuit
                         </a>
-                        <a href="tel:+32460961885" class="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-semibold text-sm rounded-md hover:bg-white/20 transition-all text-center">
-                            +32 460 96 18 85
+                        <a href="tel:+32460961885" class="px-8 py-4 bg-white text-logo-dark-green font-semibold uppercase tracking-widest text-sm rounded-md hover:bg-logo-cream transition-all text-center shadow-md">
+                            Nous appeler
                         </a>
                     </div>
                 </div>
