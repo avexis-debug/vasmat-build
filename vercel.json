@@ -2,5 +2,11 @@
   "buildCommand": "",
   "outputDirectory": ".",
   "framework": null,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/interieur", "destination": "/travaux-interieurs-liege", "permanent": true },
+    { "source": "/exterieur", "destination": "/travaux-exterieurs-liege", "permanent": true },
+    { "source": "/realisations", "destination": "/realisations-travaux-liege", "permanent": true },
+    { "source": "/contact", "destination": "/devis-gratuit-liege", "permanent": true }
+  ]
 }
