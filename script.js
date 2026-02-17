@@ -13,41 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Navbar scroll effect
-    var navLogo = document.getElementById('nav-logo');
-    var navLinks = document.querySelectorAll('.nav-link');
-    var navToggle = document.querySelector('.nav-toggle');
-    var isHomepage = navLogo !== null;
-
     if (navbar) {
         window.addEventListener('scroll', function () {
             if (window.scrollY > 50) {
-                navbar.classList.add('shadow-lg', 'py-2', 'bg-white');
-                navbar.classList.remove('py-3', 'border-white/20');
-                if (isHomepage) {
-                    navbar.classList.remove('bg-white/10', 'backdrop-blur-md');
-                    if (navLogo) navLogo.src = 'public/logo-ts-pro-tech.png';
-                    if (navToggle) { navToggle.classList.remove('text-white'); navToggle.classList.add('text-logo-dark-green'); }
-                    navLinks.forEach(function (l) {
-                        l.classList.remove('text-white', 'text-white/70', 'hover:text-white', 'hover:text-logo-cream');
-                        l.classList.add('text-logo-dark-green/60', 'hover:text-logo-dark-green');
-                    });
-                } else {
-                    navbar.classList.remove('bg-white/70', 'backdrop-blur-lg');
-                }
+                navbar.classList.add('shadow-lg', 'py-2');
+                navbar.classList.remove('py-3');
             } else {
-                navbar.classList.remove('shadow-lg', 'py-2', 'bg-white');
-                navbar.classList.add('py-3', 'border-white/20');
-                if (isHomepage) {
-                    navbar.classList.add('bg-white/10', 'backdrop-blur-md');
-                    if (navLogo) navLogo.src = 'public/logo-ts-pro-tech.png';
-                    if (navToggle) { navToggle.classList.remove('text-logo-dark-green'); navToggle.classList.add('text-white'); }
-                    navLinks.forEach(function (l) {
-                        l.classList.remove('text-logo-dark-green/60', 'hover:text-logo-dark-green');
-                        l.classList.add('text-white/70', 'hover:text-white');
-                    });
-                } else {
-                    navbar.classList.add('bg-white/70', 'backdrop-blur-lg');
-                }
+                navbar.classList.remove('shadow-lg', 'py-2');
+                navbar.classList.add('py-3');
             }
         });
     }
