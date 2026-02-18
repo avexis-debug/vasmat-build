@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ts-pro-tech.vercel.app/sitemap.xml
+Sitemap: https://tsprotech.be/sitemap.xml
