@@ -216,7 +216,11 @@
                             <h3 class="text-2xl font-bold text-logo-dark-green mb-2 tracking-tighter uppercase">Demandez votre devis</h3>
                             <p class="text-logo-dark-green/60 font-medium mb-8">Remplissez le formulaire ci-dessous et nous vous recontactons rapidement.</p>
 
-                            <form action="mailto:service.tsprotech@gmail.com" method="post" enctype="text/plain" class="space-y-6">
+                            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                                <input type="hidden" name="access_key" value="466ae4b1-97ca-4061-9750-e6b2ef5a64ab">
+                                <input type="hidden" name="subject" value="Nouvelle demande de devis - TS Pro-Tech">
+                                <input type="hidden" name="from_name" value="TS Pro-Tech Website">
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                                 <!-- Name -->
                                 <div>
                                     <label for="name" class="block text-sm font-semibold text-logo-dark-green mb-2 uppercase tracking-wider">Nom complet</label>
