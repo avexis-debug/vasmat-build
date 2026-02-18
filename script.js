@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Footer year
     if (footerYear) {
-        footerYear.textContent = '\u00A9 ' + new Date().getFullYear() + ' TS PRO-TECH. VOTRE PARTENAIRE AM\u00C9NAGEMENT & FINITION.';
+        footerYear.textContent = '\u00A9 ' + new Date().getFullYear() + ' NOM ENTREPRISE. VOTRE PARTENAIRE.';
     }
 
     // Navbar scroll effect
