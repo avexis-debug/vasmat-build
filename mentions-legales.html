@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentions Légales | Nom Entreprise - Aménagement & Finition Liège</title>
-    <meta name="description" content="Mentions légales du site Nom Entreprise. Informations sur l'éditeur du site, l'hébergeur et les conditions d'utilisation conformément à la législation belge.">
+    <title>Mentions Légales | Vasmat Build - Construction Générale Bruxelles</title>
+    <meta name="description" content="Mentions légales du site Vasmat Build. Informations sur l'éditeur du site, l'hébergeur et les conditions d'utilisation conformément à la législation belge.">
     <meta name="robots" content="noindex, follow">
     <link rel="icon" type="image/jpeg" href="public/favicon.jpg">
-    <link rel="canonical" href="https://example.com/mentions-legales">
+    <link rel="canonical" href="https://vasmatbuild.be/mentions-legales">
 
     <!-- Tailwind & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,17 +18,17 @@
         theme: {
           extend: {
             colors: {
-              'logo-cream': '#f2e1c1',
-              'logo-green': '#14532d',
-              'logo-dark-green': '#064e3b',
-              'bg-soft': '#fdfaf5',
+              'accent': '#e17055',
+              'primary': '#2d3436',
+              'primary-dark': '#1e272e',
+              'bg-soft': '#f9f9f9',
             }
           }
         }
       }
     </script>
 </head>
-<body class="bg-bg-soft text-logo-dark-green">
+<body class="bg-bg-soft text-primary-dark">
 
     <!-- ========== NAVBAR ========== -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 bg-white shadow-md py-3">
@@ -36,22 +36,22 @@
             <div class="flex justify-between items-center">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/">
-                        <img src="public/logo.png" alt="Nom Entreprise Logo" class="h-[72px] w-auto">
+                        <img src="public/logo.png" alt="Vasmat Build Logo" class="h-[72px] w-auto">
                     </a>
                 </div>
 
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="/" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Accueil</a>
-                        <a href="/travaux-interieurs-liege" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Travaux Intérieurs</a>
-                        <a href="/travaux-exterieurs-liege" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Travaux Extérieurs</a>
-                        <a href="/realisations-travaux-liege" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Réalisations</a>
-                        <a href="/devis-gratuit-liege" class="nav-link text-[13px] font-medium tracking-wide text-logo-dark-green/60 hover:text-logo-dark-green transition-colors duration-200">Contact</a>
+                        <a href="/" class="nav-link text-[13px] font-medium tracking-wide text-primary-dark/60 hover:text-primary-dark transition-colors duration-200">Accueil</a>
+                        <a href="/travaux-interieurs-bruxelles" class="nav-link text-[13px] font-medium tracking-wide text-primary-dark/60 hover:text-primary-dark transition-colors duration-200">Travaux Intérieurs</a>
+                        <a href="/travaux-exterieurs-bruxelles" class="nav-link text-[13px] font-medium tracking-wide text-primary-dark/60 hover:text-primary-dark transition-colors duration-200">Travaux Extérieurs</a>
+                        <a href="/realisations-travaux-bruxelles" class="nav-link text-[13px] font-medium tracking-wide text-primary-dark/60 hover:text-primary-dark transition-colors duration-200">Réalisations</a>
+                        <a href="/devis-gratuit-bruxelles" class="nav-link text-[13px] font-medium tracking-wide text-primary-dark/60 hover:text-primary-dark transition-colors duration-200">Contact</a>
                     </div>
                 </div>
 
                 <div class="md:hidden">
-                    <button id="menu-toggle" class="text-logo-dark-green p-2">
+                    <button id="menu-toggle" class="text-primary-dark p-2">
                         <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -63,23 +63,23 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-xl absolute top-full left-0 w-full border-b border-logo-dark-green/10">
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-xl absolute top-full left-0 w-full border-b border-primary-dark/10">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="/" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Accueil</a>
-                <a href="/travaux-interieurs-liege" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Travaux Intérieurs</a>
-                <a href="/travaux-exterieurs-liege" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Travaux Extérieurs</a>
-                <a href="/realisations-travaux-liege" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Réalisations</a>
-                <a href="/devis-gratuit-liege" class="mobile-link block px-3 py-2 text-sm font-normal text-logo-dark-green hover:bg-logo-dark-green/10 rounded-md">Contact</a>
+                <a href="/" class="mobile-link block px-3 py-2 text-sm font-normal text-primary-dark hover:bg-primary-dark/10 rounded-md">Accueil</a>
+                <a href="/travaux-interieurs-bruxelles" class="mobile-link block px-3 py-2 text-sm font-normal text-primary-dark hover:bg-primary-dark/10 rounded-md">Travaux Intérieurs</a>
+                <a href="/travaux-exterieurs-bruxelles" class="mobile-link block px-3 py-2 text-sm font-normal text-primary-dark hover:bg-primary-dark/10 rounded-md">Travaux Extérieurs</a>
+                <a href="/realisations-travaux-bruxelles" class="mobile-link block px-3 py-2 text-sm font-normal text-primary-dark hover:bg-primary-dark/10 rounded-md">Réalisations</a>
+                <a href="/devis-gratuit-bruxelles" class="mobile-link block px-3 py-2 text-sm font-normal text-primary-dark hover:bg-primary-dark/10 rounded-md">Contact</a>
             </div>
         </div>
     </nav>
 
     <main>
         <!-- ========== HEADER ========== -->
-        <section class="pt-28 pb-12 md:pt-36 md:pb-16 bg-logo-cream/30">
+        <section class="pt-28 pb-12 md:pt-36 md:pb-16 bg-accent/30">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 class="text-3xl md:text-5xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">Mentions Légales</h1>
-                <p class="text-logo-dark-green/60 font-medium">Dernière mise à jour : 17 février 2025</p>
+                <h1 class="text-3xl md:text-5xl font-bold text-primary-dark tracking-tighter uppercase mb-4">Mentions Légales</h1>
+                <p class="text-primary-dark/60 font-medium">Dernière mise à jour : 17 février 2025</p>
             </div>
         </section>
 
@@ -90,108 +90,109 @@
 
                     <!-- 1. Éditeur du site -->
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">1. Éditeur du site</h2>
-                        <div class="bg-white border border-logo-cream/30 rounded-xl p-6 md:p-8 space-y-3">
-                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Dénomination :</strong> Nom Entreprise</p>
-                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Forme juridique :</strong> Entreprise individuelle</p>
-                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Siège social :</strong> Liège, Belgique</p>
-                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Numéro BCE :</strong> À compléter</p>
-                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Numéro de TVA :</strong> À compléter</p>
-                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Téléphone :</strong> <a href="tel:+32XXXXXXXXX" class="text-logo-green hover:underline">+32 XXX XX XX XX</a></p>
-                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Email :</strong> <a href="mailto:contact@example.com" class="text-logo-green hover:underline">contact@example.com</a></p>
-                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Site web :</strong> <a href="https://example.com" class="text-logo-green hover:underline">https://example.com</a></p>
+                        <h2 class="text-xl md:text-2xl font-bold text-primary-dark tracking-tighter uppercase mb-4">1. Éditeur du site</h2>
+                        <div class="bg-white border border-accent/30 rounded-xl p-6 md:p-8 space-y-3">
+                            <p class="text-primary-dark/80 font-medium"><strong class="text-primary-dark">Dénomination :</strong> Vasmat Build</p>
+                            <p class="text-primary-dark/80 font-medium"><strong class="text-primary-dark">Forme juridique :</strong> SRL (Société à Responsabilité Limitée)</p>
+                            <p class="text-primary-dark/80 font-medium"><strong class="text-primary-dark">Siège social :</strong> 22 Jozef Van Elewijckstraat Box 7, 1853 Grimbergen</p>
+                            <p class="text-primary-dark/80 font-medium"><strong class="text-primary-dark">Siège d'exploitation :</strong> 66 Rue Saint Guidon, 1070 Anderlecht</p>
+                            <p class="text-primary-dark/80 font-medium"><strong class="text-primary-dark">Numéro BCE :</strong> 1012.021.487</p>
+                            <p class="text-primary-dark/80 font-medium"><strong class="text-primary-dark">Numéro de TVA :</strong> BE1012021487</p>
+                            <p class="text-primary-dark/80 font-medium"><strong class="text-primary-dark">Téléphone :</strong> <a href="tel:+32465233472" class="text-primary hover:underline">+32 465 23 34 72</a></p>
+                            <p class="text-primary-dark/80 font-medium"><strong class="text-primary-dark">Email :</strong> <a href="mailto:contact@vasmatbuild.be" class="text-primary hover:underline">contact@vasmatbuild.be</a></p>
+                            <p class="text-primary-dark/80 font-medium"><strong class="text-primary-dark">Site web :</strong> <a href="https://vasmatbuild.be" class="text-primary hover:underline">https://vasmatbuild.be</a></p>
                         </div>
                     </div>
 
                     <!-- 2. Responsable de publication -->
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">2. Responsable de publication</h2>
-                        <p class="text-logo-dark-green/80 font-medium leading-relaxed">
-                            Le responsable de la publication du site est le gérant de l'entreprise Nom Entreprise, joignable via l'adresse email
-                            <a href="mailto:contact@example.com" class="text-logo-green hover:underline">contact@example.com</a>.
+                        <h2 class="text-xl md:text-2xl font-bold text-primary-dark tracking-tighter uppercase mb-4">2. Responsable de publication</h2>
+                        <p class="text-primary-dark/80 font-medium leading-relaxed">
+                            Le responsable de la publication du site est le gérant de l'entreprise Vasmat Build, joignable via l'adresse email
+                            <a href="mailto:contact@vasmatbuild.be" class="text-primary hover:underline">contact@vasmatbuild.be</a>.
                         </p>
                     </div>
 
                     <!-- 3. Hébergeur -->
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">3. Hébergeur</h2>
-                        <div class="bg-white border border-logo-cream/30 rounded-xl p-6 md:p-8 space-y-3">
-                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Raison sociale :</strong> Vercel Inc.</p>
-                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Adresse :</strong> 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis</p>
-                            <p class="text-logo-dark-green/80 font-medium"><strong class="text-logo-dark-green">Site web :</strong> vercel.com</p>
+                        <h2 class="text-xl md:text-2xl font-bold text-primary-dark tracking-tighter uppercase mb-4">3. Hébergeur</h2>
+                        <div class="bg-white border border-accent/30 rounded-xl p-6 md:p-8 space-y-3">
+                            <p class="text-primary-dark/80 font-medium"><strong class="text-primary-dark">Raison sociale :</strong> Vercel Inc.</p>
+                            <p class="text-primary-dark/80 font-medium"><strong class="text-primary-dark">Adresse :</strong> 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis</p>
+                            <p class="text-primary-dark/80 font-medium"><strong class="text-primary-dark">Site web :</strong> vercel.com</p>
                         </div>
                     </div>
 
                     <!-- 4. Propriété intellectuelle -->
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">4. Propriété intellectuelle</h2>
-                        <p class="text-logo-dark-green/80 font-medium leading-relaxed mb-4">
-                            L'ensemble du contenu de ce site (textes, images, logos, graphismes, icônes, sons, logiciels, etc.) est la propriété exclusive de Nom Entreprise ou de ses partenaires et est protégé par les lois belges et internationales relatives à la propriété intellectuelle.
+                        <h2 class="text-xl md:text-2xl font-bold text-primary-dark tracking-tighter uppercase mb-4">4. Propriété intellectuelle</h2>
+                        <p class="text-primary-dark/80 font-medium leading-relaxed mb-4">
+                            L'ensemble du contenu de ce site (textes, images, logos, graphismes, icônes, sons, logiciels, etc.) est la propriété exclusive de Vasmat Build ou de ses partenaires et est protégé par les lois belges et internationales relatives à la propriété intellectuelle.
                         </p>
-                        <p class="text-logo-dark-green/80 font-medium leading-relaxed">
-                            Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation écrite préalable de Nom Entreprise.
+                        <p class="text-primary-dark/80 font-medium leading-relaxed">
+                            Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation écrite préalable de Vasmat Build.
                         </p>
                     </div>
 
                     <!-- 5. Limitation de responsabilité -->
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">5. Limitation de responsabilité</h2>
-                        <p class="text-logo-dark-green/80 font-medium leading-relaxed mb-4">
-                            Nom Entreprise s'efforce de fournir sur son site des informations aussi précises que possible. Toutefois, l'entreprise ne pourra être tenue responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu'elles soient de son fait ou du fait de tiers partenaires qui lui fournissent ces informations.
+                        <h2 class="text-xl md:text-2xl font-bold text-primary-dark tracking-tighter uppercase mb-4">5. Limitation de responsabilité</h2>
+                        <p class="text-primary-dark/80 font-medium leading-relaxed mb-4">
+                            Vasmat Build s'efforce de fournir sur son site des informations aussi précises que possible. Toutefois, l'entreprise ne pourra être tenue responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu'elles soient de son fait ou du fait de tiers partenaires qui lui fournissent ces informations.
                         </p>
-                        <p class="text-logo-dark-green/80 font-medium leading-relaxed">
+                        <p class="text-primary-dark/80 font-medium leading-relaxed">
                             Toutes les informations indiquées sur le site sont données à titre indicatif et sont susceptibles d'évoluer. Les informations contenues sur ce site ne sont pas contractuelles.
                         </p>
                     </div>
 
                     <!-- 6. Liens hypertextes -->
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">6. Liens hypertextes</h2>
-                        <p class="text-logo-dark-green/80 font-medium leading-relaxed">
-                            Le site peut contenir des liens hypertextes vers d'autres sites. Nom Entreprise n'exerce aucun contrôle sur le contenu de ces sites tiers et décline toute responsabilité quant à leur contenu ou aux éventuels dommages résultant de leur utilisation.
+                        <h2 class="text-xl md:text-2xl font-bold text-primary-dark tracking-tighter uppercase mb-4">6. Liens hypertextes</h2>
+                        <p class="text-primary-dark/80 font-medium leading-relaxed">
+                            Le site peut contenir des liens hypertextes vers d'autres sites. Vasmat Build n'exerce aucun contrôle sur le contenu de ces sites tiers et décline toute responsabilité quant à leur contenu ou aux éventuels dommages résultant de leur utilisation.
                         </p>
                     </div>
 
                     <!-- 7. Droit applicable -->
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">7. Droit applicable et juridiction compétente</h2>
-                        <p class="text-logo-dark-green/80 font-medium leading-relaxed mb-4">
-                            Les présentes mentions légales sont soumises au droit belge. En cas de litige, et après tentative de résolution amiable, les tribunaux de l'arrondissement judiciaire de Liège seront seuls compétents.
+                        <h2 class="text-xl md:text-2xl font-bold text-primary-dark tracking-tighter uppercase mb-4">7. Droit applicable et juridiction compétente</h2>
+                        <p class="text-primary-dark/80 font-medium leading-relaxed mb-4">
+                            Les présentes mentions légales sont soumises au droit belge. En cas de litige, et après tentative de résolution amiable, les tribunaux de l'arrondissement judiciaire de Bruxelles seront seuls compétents.
                         </p>
-                        <p class="text-logo-dark-green/80 font-medium leading-relaxed">
+                        <p class="text-primary-dark/80 font-medium leading-relaxed">
                             Conformément aux dispositions du Code de droit économique, le consommateur peut également recourir à la plateforme européenne de règlement en ligne des litiges (RLL) :
-                            <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" class="text-logo-green hover:underline">https://ec.europa.eu/consumers/odr</a>.
+                            <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">https://ec.europa.eu/consumers/odr</a>.
                         </p>
                     </div>
 
                     <!-- 8. Protection des données -->
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">8. Protection des données personnelles</h2>
-                        <p class="text-logo-dark-green/80 font-medium leading-relaxed">
+                        <h2 class="text-xl md:text-2xl font-bold text-primary-dark tracking-tighter uppercase mb-4">8. Protection des données personnelles</h2>
+                        <p class="text-primary-dark/80 font-medium leading-relaxed">
                             Pour toute information relative à la collecte et au traitement de vos données personnelles, veuillez consulter notre
-                            <a href="/politique-confidentialite" class="text-logo-green hover:underline font-semibold">Politique de Confidentialité</a>.
+                            <a href="/politique-confidentialite" class="text-primary hover:underline font-semibold">Politique de Confidentialité</a>.
                         </p>
                     </div>
 
                     <!-- 9. Cookies -->
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">9. Cookies</h2>
-                        <p class="text-logo-dark-green/80 font-medium leading-relaxed">
+                        <h2 class="text-xl md:text-2xl font-bold text-primary-dark tracking-tighter uppercase mb-4">9. Cookies</h2>
+                        <p class="text-primary-dark/80 font-medium leading-relaxed">
                             Pour toute information relative à l'utilisation des cookies sur ce site, veuillez consulter notre
-                            <a href="/politique-cookies" class="text-logo-green hover:underline font-semibold">Politique de Cookies</a>.
+                            <a href="/politique-cookies" class="text-primary hover:underline font-semibold">Politique de Cookies</a>.
                         </p>
                     </div>
 
                     <!-- 10. Législation applicable -->
                     <div>
-                        <h2 class="text-xl md:text-2xl font-bold text-logo-dark-green tracking-tighter uppercase mb-4">10. Législation applicable</h2>
-                        <div class="bg-white border border-logo-cream/30 rounded-xl p-6 md:p-8">
-                            <p class="text-logo-dark-green/80 font-medium leading-relaxed mb-3">Ce site est conforme aux dispositions légales suivantes :</p>
-                            <ul class="space-y-2 text-logo-dark-green/80 font-medium">
-                                <li class="flex items-start gap-2"><span class="text-logo-green mt-1">&#10003;</span> Loi du 11 mars 2003 sur certains aspects juridiques des services de la société de l'information (commerce électronique)</li>
-                                <li class="flex items-start gap-2"><span class="text-logo-green mt-1">&#10003;</span> Règlement général sur la protection des données (RGPD - Règlement UE 2016/679)</li>
-                                <li class="flex items-start gap-2"><span class="text-logo-green mt-1">&#10003;</span> Loi du 30 juillet 2018 relative à la protection des personnes physiques à l'égard des traitements de données à caractère personnel</li>
-                                <li class="flex items-start gap-2"><span class="text-logo-green mt-1">&#10003;</span> Code de droit économique (Livre VI - Pratiques du marché et protection du consommateur)</li>
+                        <h2 class="text-xl md:text-2xl font-bold text-primary-dark tracking-tighter uppercase mb-4">10. Législation applicable</h2>
+                        <div class="bg-white border border-accent/30 rounded-xl p-6 md:p-8">
+                            <p class="text-primary-dark/80 font-medium leading-relaxed mb-3">Ce site est conforme aux dispositions légales suivantes :</p>
+                            <ul class="space-y-2 text-primary-dark/80 font-medium">
+                                <li class="flex items-start gap-2"><span class="text-primary mt-1">&#10003;</span> Loi du 11 mars 2003 sur certains aspects juridiques des services de la société de l'information (commerce électronique)</li>
+                                <li class="flex items-start gap-2"><span class="text-primary mt-1">&#10003;</span> Règlement général sur la protection des données (RGPD - Règlement UE 2016/679)</li>
+                                <li class="flex items-start gap-2"><span class="text-primary mt-1">&#10003;</span> Loi du 30 juillet 2018 relative à la protection des personnes physiques à l'égard des traitements de données à caractère personnel</li>
+                                <li class="flex items-start gap-2"><span class="text-primary mt-1">&#10003;</span> Code de droit économique (Livre VI - Pratiques du marché et protection du consommateur)</li>
                             </ul>
                         </div>
                     </div>
@@ -202,71 +203,76 @@
     </main>
 
     <!-- ========== FOOTER ========== -->
-    <footer class="bg-logo-cream/30 text-logo-dark-green pt-12 pb-8 md:pt-20 md:pb-10">
+    <footer class="bg-accent/30 text-primary-dark pt-12 pb-8 md:pt-20 md:pb-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10 md:gap-12 md:mb-16">
                 <div class="flex flex-col">
-                    <img src="public/logo.png" alt="Nom Entreprise" class="h-[84px] w-auto max-w-[300px] object-contain mb-6">
-                    <p class="text-logo-dark-green/60 text-sm font-medium leading-relaxed mb-4">
-                        Votre partenaire aménagement & finition à Liège. Un rendu propre, net et professionnel.
+                    <img src="public/logo.png" alt="Vasmat Build" class="h-[84px] w-auto max-w-[300px] object-contain mb-6">
+                    <p class="text-primary-dark/60 text-sm font-medium leading-relaxed mb-4">
+                        Votre partenaire construction générale à Bruxelles. Un rendu propre, net et professionnel.
                     </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-9 h-9 bg-logo-dark-green/10 rounded-lg text-logo-dark-green/50 hover:bg-logo-green hover:text-white transition-all">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-9 h-9 bg-primary-dark/10 rounded-lg text-primary-dark/50 hover:bg-primary hover:text-white transition-all">
                         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                     </a>
                 </div>
 
                 <div>
-                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-logo-dark-green">Navigation</h4>
-                    <ul class="space-y-3 text-logo-dark-green/70 font-medium text-sm">
-                        <li><a href="/" class="hover:text-logo-green transition-colors">Accueil</a></li>
-                        <li><a href="/travaux-interieurs-liege" class="hover:text-logo-green transition-colors">Travaux Intérieurs</a></li>
-                        <li><a href="/travaux-exterieurs-liege" class="hover:text-logo-green transition-colors">Travaux Extérieurs</a></li>
-                        <li><a href="/realisations-travaux-liege" class="hover:text-logo-green transition-colors">Réalisations</a></li>
-                        <li><a href="/devis-gratuit-liege" class="hover:text-logo-green transition-colors">Contact</a></li>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-primary-dark">Navigation</h4>
+                    <ul class="space-y-3 text-primary-dark/70 font-medium text-sm">
+                        <li><a href="/" class="hover:text-primary transition-colors">Accueil</a></li>
+                        <li><a href="/travaux-interieurs-bruxelles" class="hover:text-primary transition-colors">Travaux Intérieurs</a></li>
+                        <li><a href="/travaux-exterieurs-bruxelles" class="hover:text-primary transition-colors">Travaux Extérieurs</a></li>
+                        <li><a href="/realisations-travaux-bruxelles" class="hover:text-primary transition-colors">Réalisations</a></li>
+                        <li><a href="/devis-gratuit-bruxelles" class="hover:text-primary transition-colors">Contact</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-logo-dark-green">Contact</h4>
-                    <ul class="space-y-3 text-logo-dark-green/70 font-medium text-sm">
-                        <li><a href="tel:+32XXXXXXXXX" class="hover:text-logo-green transition-colors">+32 XXX XX XX XX</a></li>
-                        <li><a href="mailto:contact@example.com" class="hover:text-logo-green transition-colors">contact@example.com</a></li>
-                        <li>Liège et alentour</li>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-primary-dark">Contact</h4>
+                    <ul class="space-y-3 text-primary-dark/70 font-medium text-sm">
+                        <li><a href="tel:+32465233472" class="hover:text-primary transition-colors">+32 465 23 34 72</a></li>
+                        <li><a href="mailto:contact@vasmatbuild.be" class="hover:text-primary transition-colors">contact@vasmatbuild.be</a></li>
+                        <li>Bruxelles et alentours</li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-logo-dark-green">Zone d'intervention</h4>
-                    <ul class="space-y-2 text-logo-dark-green/70 font-medium text-sm">
-                        <li>Liège</li>
-                        <li>Seraing</li>
-                        <li>Verviers</li>
-                        <li>Herstal</li>
-                        <li>Ans</li>
+                    <h4 class="font-semibold mb-6 text-xs uppercase tracking-[0.15em] text-primary-dark">Zone d'intervention</h4>
+                    <ul class="space-y-2 text-primary-dark/70 font-medium text-sm">
+                        <li>Bruxelles</li>
+                        <li>Anderlecht</li>
+                        <li>Grimbergen</li>
+                        <li>Schaerbeek</li>
+                        <li>Ixelles</li>
+                        <li>Uccle</li>
+                        <li>Forest</li>
+                        <li>Molenbeek</li>
+                        <li>Woluwe</li>
+                        <li>Etterbeek</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="pt-6 md:pt-10 border-t border-logo-dark-green/10 text-center space-y-4">
-                <div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-[10px] font-semibold tracking-[0.1em] text-logo-dark-green/30">
-                    <a href="/mentions-legales" class="hover:text-logo-dark-green transition-colors">Mentions légales</a>
-                    <span class="text-logo-dark-green/15">|</span>
-                    <a href="/politique-confidentialite" class="hover:text-logo-dark-green transition-colors">Confidentialité</a>
-                    <span class="text-logo-dark-green/15">|</span>
-                    <a href="/politique-cookies" class="hover:text-logo-dark-green transition-colors">Cookies</a>
+            <div class="pt-6 md:pt-10 border-t border-primary-dark/10 text-center space-y-4">
+                <div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-[10px] font-semibold tracking-[0.1em] text-primary-dark/30">
+                    <a href="/mentions-legales" class="hover:text-primary-dark transition-colors">Mentions légales</a>
+                    <span class="text-primary-dark/15">|</span>
+                    <a href="/politique-confidentialite" class="hover:text-primary-dark transition-colors">Confidentialité</a>
+                    <span class="text-primary-dark/15">|</span>
+                    <a href="/politique-cookies" class="hover:text-primary-dark transition-colors">Cookies</a>
                 </div>
-                <div id="footer-year" class="text-logo-dark-green/25 text-[10px] uppercase font-semibold tracking-[0.2em]"></div>
-                <p class="text-logo-dark-green/20 text-[9px] font-medium">Site créé par <a href="https://siteexpress24.com" target="_blank" rel="noopener noreferrer" class="hover:text-logo-dark-green/40 transition-colors underline">siteexpress24.com</a></p>
+                <div id="footer-year" class="text-primary-dark/25 text-[10px] uppercase font-semibold tracking-[0.2em]"></div>
+                <p class="text-primary-dark/20 text-[9px] font-medium">Site créé par <a href="https://siteexpress24.com" target="_blank" rel="noopener noreferrer" class="hover:text-primary-dark/40 transition-colors underline">siteexpress24.com</a></p>
             </div>
         </div>
     </footer>
 
     <!-- Cookie Banner -->
-    <div id="cookie-banner" class="hidden fixed bottom-4 left-4 z-50 max-w-sm bg-white border border-logo-cream rounded-2xl shadow-xl p-6">
-        <p class="text-sm text-logo-dark-green font-medium mb-4 leading-relaxed">Ce site utilise des cookies pour améliorer votre expérience. Voir notre <a href="/politique-confidentialite" class="text-logo-green hover:underline">politique de confidentialité</a> et notre <a href="/politique-cookies" class="text-logo-green hover:underline">politique de cookies</a>.</p>
+    <div id="cookie-banner" class="hidden fixed bottom-4 left-4 z-50 max-w-sm bg-white border border-accent rounded-2xl shadow-xl p-6">
+        <p class="text-sm text-primary-dark font-medium mb-4 leading-relaxed">Ce site utilise des cookies pour améliorer votre expérience. Voir notre <a href="/politique-confidentialite" class="text-primary hover:underline">politique de confidentialité</a> et notre <a href="/politique-cookies" class="text-primary hover:underline">politique de cookies</a>.</p>
         <div class="flex gap-3">
-            <button id="cookie-accept" class="px-5 py-2 bg-logo-green text-white text-xs font-semibold uppercase tracking-wider rounded-lg hover:bg-logo-dark-green transition-colors">Accepter</button>
-            <button id="cookie-refuse" class="px-5 py-2 bg-logo-cream text-logo-dark-green text-xs font-semibold uppercase tracking-wider rounded-lg hover:bg-logo-cream/70 transition-colors">Refuser</button>
+            <button id="cookie-accept" class="px-5 py-2 bg-primary text-white text-xs font-semibold uppercase tracking-wider rounded-lg hover:bg-primary-dark transition-colors">Accepter</button>
+            <button id="cookie-refuse" class="px-5 py-2 bg-accent text-primary-dark text-xs font-semibold uppercase tracking-wider rounded-lg hover:bg-accent/70 transition-colors">Refuser</button>
         </div>
     </div>
 

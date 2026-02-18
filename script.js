@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Footer year
     if (footerYear) {
-        footerYear.textContent = '\u00A9 ' + new Date().getFullYear() + ' NOM ENTREPRISE. VOTRE PARTENAIRE.';
+        footerYear.textContent = '\u00A9 ' + new Date().getFullYear() + ' VASMAT BUILD. CONSTRUCTION GÉNÉRALE BRUXELLES.';
     }
 
     // Navbar scroll effect
@@ -87,11 +87,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Update active button
                 filterBtns.forEach(function (b) {
-                    b.classList.remove('bg-logo-green', 'text-logo-cream');
-                    b.classList.add('bg-white', 'text-logo-dark-green');
+                    b.classList.remove('bg-primary', 'text-accent');
+                    b.classList.add('bg-white', 'text-primary-dark');
                 });
-                btn.classList.remove('bg-white', 'text-logo-dark-green');
-                btn.classList.add('bg-logo-green', 'text-logo-cream');
+                btn.classList.remove('bg-white', 'text-primary-dark');
+                btn.classList.add('bg-primary', 'text-accent');
 
                 // Filter cards
                 projectCards.forEach(function (card) {
