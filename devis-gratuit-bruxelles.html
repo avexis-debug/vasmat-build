@@ -234,48 +234,41 @@
                             <p class="text-primary-dark/60 font-medium mb-8">Remplissez le formulaire ci-dessous et nous vous recontactons rapidement.</p>
 
                             <form id="devis-form" class="space-y-6">
-                                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
-                                <input type="hidden" name="subject" value="Nouvelle demande de devis">
-                                <input type="hidden" name="from_name" value="Website">
-                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                <!-- Honeypot anti-spam -->
+                                <input type="text" name="_honey" style="display: none;" tabindex="-1" autocomplete="off">
+
                                 <!-- Name -->
                                 <div>
                                     <label for="name" class="block text-sm font-semibold text-primary-dark mb-2 uppercase tracking-wider">Nom complet</label>
-                                    <input type="text" id="name" name="Nom" required placeholder="Votre nom et prénom"
-                                        class="w-full px-4 py-3 bg-white border border-accent/30 rounded-lg text-primary-dark placeholder-primary-dark/30 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" />
-                                </div>
-
-                                <!-- Email -->
-                                <div>
-                                    <label for="email" class="block text-sm font-semibold text-primary-dark mb-2 uppercase tracking-wider">Email</label>
-                                    <input type="hidden" name="replyto" id="replyto">
-                                    <input type="email" id="email" name="Email" required placeholder="votre@email.com"
+                                    <input type="text" id="name" name="nom" required placeholder="Votre nom et prénom"
                                         class="w-full px-4 py-3 bg-white border border-accent/30 rounded-lg text-primary-dark placeholder-primary-dark/30 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" />
                                 </div>
 
                                 <!-- Phone -->
                                 <div>
                                     <label for="phone" class="block text-sm font-semibold text-primary-dark mb-2 uppercase tracking-wider">Téléphone</label>
-                                    <input type="tel" id="phone" name="Telephone" placeholder="04XX XX XX XX"
+                                    <input type="tel" id="phone" name="telephone" required placeholder="04XX XX XX XX"
                                         class="w-full px-4 py-3 bg-white border border-accent/30 rounded-lg text-primary-dark placeholder-primary-dark/30 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" />
                                 </div>
 
-                                <!-- Service Type -->
+                                <!-- Email -->
                                 <div>
-                                    <label for="service" class="block text-sm font-semibold text-primary-dark mb-2 uppercase tracking-wider">Type de service</label>
-                                    <select id="service" name="Type de service" required
-                                        class="w-full px-4 py-3 bg-white border border-accent/30 rounded-lg text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
-                                        <option value="" disabled selected>Sélectionnez un service</option>
-                                        <option value="Travaux Intérieurs">Travaux Intérieurs</option>
-                                        <option value="Travaux Extérieurs">Travaux Extérieurs</option>
-                                        <option value="Autre">Autre</option>
-                                    </select>
+                                    <label for="email" class="block text-sm font-semibold text-primary-dark mb-2 uppercase tracking-wider">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="votre@email.com"
+                                        class="w-full px-4 py-3 bg-white border border-accent/30 rounded-lg text-primary-dark placeholder-primary-dark/30 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" />
+                                </div>
+
+                                <!-- City -->
+                                <div>
+                                    <label for="ville" class="block text-sm font-semibold text-primary-dark mb-2 uppercase tracking-wider">Ville / Code postal</label>
+                                    <input type="text" id="ville" name="ville" placeholder="Votre ville / code postal"
+                                        class="w-full px-4 py-3 bg-white border border-accent/30 rounded-lg text-primary-dark placeholder-primary-dark/30 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" />
                                 </div>
 
                                 <!-- Message -->
                                 <div>
                                     <label for="message" class="block text-sm font-semibold text-primary-dark mb-2 uppercase tracking-wider">Votre message</label>
-                                    <textarea id="message" name="Message" rows="5" required placeholder="Décrivez votre projet, vos besoins, vos questions..."
+                                    <textarea id="message" name="message" rows="4" placeholder="Décrivez votre besoin"
                                         class="w-full px-4 py-3 bg-white border border-accent/30 rounded-lg text-primary-dark placeholder-primary-dark/30 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-vertical"></textarea>
                                 </div>
 
@@ -287,32 +280,30 @@
                                 <div id="devis-status" class="hidden text-center text-sm font-semibold py-3 rounded-lg"></div>
                             </form>
                             <script>
-                            document.getElementById('email').addEventListener('input', function() {
-                                document.getElementById('replyto').value = this.value;
-                            });
                             document.getElementById('devis-form').addEventListener('submit', async function(e) {
                                 e.preventDefault();
-                                document.getElementById('replyto').value = document.getElementById('email').value;
+                                const form = e.target;
+                                const data = Object.fromEntries(new FormData(form));
                                 const btn = document.getElementById('devis-btn');
                                 const status = document.getElementById('devis-status');
                                 btn.disabled = true;
                                 btn.textContent = 'Envoi en cours...';
                                 status.className = 'hidden';
                                 try {
-                                    const res = await fetch('https://api.web3forms.com/submit', {
+                                    const res = await fetch('/api/contact', {
                                         method: 'POST',
-                                        body: new FormData(this)
+                                        headers: { 'Content-Type': 'application/json' },
+                                        body: JSON.stringify(data)
                                     });
-                                    const data = await res.json();
-                                    if (data.success) {
-                                        status.textContent = 'Votre demande a bien été envoyée ! Nous vous recontactons rapidement.';
+                                    if (res.ok) {
+                                        status.textContent = 'Merci ! Votre demande a bien été envoyée. Nous vous recontactons rapidement.';
                                         status.className = 'text-center text-sm font-semibold py-3 rounded-lg text-green-700 bg-green-50';
-                                        this.reset();
+                                        form.reset();
                                     } else {
                                         status.textContent = 'Une erreur est survenue. Veuillez réessayer ou nous appeler directement.';
                                         status.className = 'text-center text-sm font-semibold py-3 rounded-lg text-red-700 bg-red-50';
                                     }
-                                } catch {
+                                } catch (err) {
                                     status.textContent = 'Une erreur est survenue. Veuillez réessayer ou nous appeler directement.';
                                     status.className = 'text-center text-sm font-semibold py-3 rounded-lg text-red-700 bg-red-50';
                                 }
