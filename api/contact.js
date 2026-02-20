@@ -26,9 +26,12 @@ module.exports = async (req, res) => {
       content += `<p><strong>${label} :</strong> ${value}</p>`;
     }
 
+    const prospectEmail = data.email || null;
+    const prospectName = data.nom || 'Prospect';
+
     await resend.emails.send({
-      from: 'notifications@siteexpress24.com',
-      replyTo: data.email || undefined,
+      from: `${prospectName} via ${siteName} <notifications@siteexpress24.com>`,
+      ...(prospectEmail && { reply_to: prospectEmail }),
       to: clientEmail,
       subject: `Nouvelle demande de devis — ${siteName}`,
       html: `
