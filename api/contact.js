@@ -31,7 +31,7 @@ module.exports = async (req, res) => {
 
     await resend.emails.send({
       from: `${prospectName} via ${siteName} <notifications@siteexpress24.com>`,
-      ...(prospectEmail && { reply_to: prospectEmail }),
+      ...(prospectEmail && { replyTo: prospectEmail }),
       to: clientEmail,
       subject: `Nouvelle demande de devis — ${siteName}`,
       html: `
