@@ -40,6 +40,12 @@ module.exports = async (req, res) => {
           <p>Un prospect a rempli le formulaire sur <strong>${siteName}</strong> :</p>
           <hr style="border: 1px solid #eee;">
           ${content}
+          ${prospectEmail ? `
+          <hr style="border: 1px solid #eee;">
+          <p style="margin: 20px 0;">
+            <a href="mailto:${prospectEmail}" style="display: inline-block; padding: 12px 24px; background-color: #1A5276; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold;">Répondre à ${prospectName}</a>
+          </p>
+          ` : ''}
           <hr style="border: 1px solid #eee;">
           <p style="color: #888; font-size: 12px;">Envoyé via SiteExpress24</p>
         </div>
